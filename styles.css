@@ -1,0 +1,96 @@
+/* Add your custom styles here */
+
+
+.first-page-top-component {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page-left-middle-component {
+    height: 60vh;
+    overflow-y: auto;
+}
+
+.first-page-right-middle-component {
+    height: 60vh;
+    overflow-y: auto;
+}
+
+.first-page-bottom-component {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card {
+    width: 100%;
+    max-width: 23%;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Scale and crop the image to fit */
+}
+
+.second-page-component {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive column configurations */
+@media (min-width: 1920px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 8);
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1919px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 7);
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 6);
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 5);
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 4);
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 800px) {
+    .first-page-right-middle-component .product-card {
+        width: calc(100% / 2);
+    }
+}
