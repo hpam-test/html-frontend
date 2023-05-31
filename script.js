@@ -168,9 +168,11 @@ function handleNextClick() {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Retrieve the product ID from the URL query parameters
-    if (window.location.pathname === '/') {
+    console.log(window.location.pathname)
+    if (window.location.pathname === '/index.html') {
         fetchProducts(page, limit, product_type_id, category_merk_id, category_id)
             .then(({ products, totalPages }) => {
+                console.log(products)
                 displayProducts(products)
             })
 
